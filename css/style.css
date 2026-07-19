@@ -105,16 +105,24 @@ body {
     justify-content: center;
 }
 
+/* এই কোডটি লেখা ও ছবিকে উপরের দিকে সমান রাখবে */
 .hero-container {
     display: flex;
+    align-items: flex-start; /* center এর বদলে flex-start দেওয়া হলো */
     justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-    max-width: 1200px;
+    gap: 5px; 
     width: 100%;
-    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+.hero-image {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+    /* ম্যাজিক ট্রিক: মাইনাস (-) ভ্যালু দেওয়ার কারণে ছবিটি জোর করে উপরে উঠে যাবে */
+    margin-top: -250px; 
+}
 /* Animations */
 @keyframes fadeInRight {
     from { opacity: 0; transform: translateX(-40px); }
@@ -200,13 +208,6 @@ body {
     flex: 1;
     text-align: center;
     animation: fadeInLeft 1s ease-out;
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 550px;
-    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.15));
-    transition: 0.4s ease;
 }
 
 .hero-image img:hover {
@@ -937,7 +938,7 @@ footer p {
 
 /* ২. হিরো সেকশন পারফেক্ট লেআউট (পাশাপাশি) */
 .hero-section {
-    padding-top: 120px; 
+    padding-top: 50px; 
 }
 
 /* এই কোডটি লেখা ও ছবিকে সমান দুই ভাগে ভাগ করে পাশাপাশি বসাবে */
@@ -1013,7 +1014,7 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .hero-section { padding-top: 80px; }
+    .hero-section { padding-top: 10px; } /* 80px থেকে কমিয়ে 10px করা হলো */
     .logo-section img { width: 60px !important; height: 60px !important; }
     .hero-text h1 { font-size: 30px !important; }
 }
