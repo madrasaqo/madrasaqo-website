@@ -20,37 +20,40 @@ const animateCounters = () => {
     });
 };
 
-// ===== Perfect Slow Motion Hero Slider =====
+// ===== Perfect Slow Motion Hero Slider (Bulletproof) =====
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 
-if(slides.length > 0) {
-    // শুরুতে সব ছবি ডানদিকে রেডি রাখা
-    slides.forEach(slide => slide.classList.add('snap'));
+if (slides.length > 0) {
+    // শুরুতে সব ছবিকে অ্যানিমেশন ছাড়া ডানদিকে রেডি রাখা
+    slides.forEach(slide => {
+        slide.style.transition = 'none';
+        slide.style.left = '100%';
+    });
     
-    // প্রথম ছবিটি স্ক্রিনে আনা
+    // প্রথম ছবিটিকে ধীর গতিতে মাঝে আনা
     setTimeout(() => {
-        slides[currentSlide].classList.remove('snap');
-        slides[currentSlide].classList.add('active');
-    }, 50);
+        slides[currentSlide].style.transition = 'left 2s ease-in-out';
+        slides[currentSlide].style.left = '0';
+    }, 100);
 
     setInterval(() => {
-        const previousSlide = currentSlide;
+        let previousSlide = currentSlide;
         currentSlide = (currentSlide + 1) % slides.length;
-        
-        // আগের ছবিটিকে বাম দিকে ধীর গতিতে পাঠিয়ে দেওয়া
-        slides[previousSlide].classList.remove('active');
-        slides[previousSlide].classList.add('exit');
-        
-        // নতুন ছবিটিকে ডানদিকে জাদুকরীভাবে রেডি করা (যাতে চোখের পলকে না দৌড়ায়)
-        slides[currentSlide].classList.remove('exit');
-        slides[currentSlide].classList.add('snap'); 
-        
-        // ডানদিক থেকে ধীর গতিতে স্ক্রিনের মাঝে আনা
+
+        // ১. আগের ছবিটিকে ধীর গতিতে বামে সরিয়ে দেওয়া
+        slides[previousSlide].style.transition = 'left 2s ease-in-out';
+        slides[previousSlide].style.left = '-100%';
+
+        // ২. নতুন ছবিটিকে চোখের পলকে (অ্যানিমেশন ছাড়া) ডানদিকে রেডি করা
+        slides[currentSlide].style.transition = 'none';
+        slides[currentSlide].style.left = '100%';
+
+        // ৩. একটু সময় নিয়ে নতুন ছবিটিকে ধীর গতিতে ডান থেকে মাঝে আনা
         setTimeout(() => {
-            slides[currentSlide].classList.remove('snap');
-            slides[currentSlide].classList.add('active');
-        }, 50);
-        
-    }, 4000); // 4 সেকেন্ড পর পর পরিবর্তন হবে
+            slides[currentSlide].style.transition = 'left 2s ease-in-out';
+            slides[currentSlide].style.left = '0';
+        }, 50); // এই 50 মিলিসেকেন্ড গ্যাপটা ম্যাজিকের মতো কাজ করে!
+
+    }, 5000); // প্রতি ৫ সেকেন্ড পর পর স্লাইড হবে
 }
