@@ -920,3 +920,54 @@ footer p {
         transform: none;
     }
 }
+/* =========================================
+   FIXES: LOGO, TEXT SIZE & SLIDER
+========================================= */
+
+/* ১. লোগো ফিক্স (সাদা ব্যাকগ্রাউন্ড ও হালকা গ্লো) */
+.logo-section img {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 3px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* ২. টাইটেল ফিক্স (এক লাইনে রাখা ও সাইজ কমানো) */
+.hero-text h1 {
+    font-size: 34px !important;
+    white-space: nowrap; /* লেখা এক লাইনে রাখবে */
+}
+
+/* ৩. স্লাইডার ডিজাইন */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    aspect-ratio: 16/9; /* ছবির অনুপাত সুন্দর রাখবে */
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ছবি পুরো বক্সে ফিট হবে */
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* ছবি পরিবর্তনের স্মুথ অ্যানিমেশন */
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* মোবাইল ভিউ ফিক্স */
+@media (max-width: 1024px) {
+    .hero-text h1 { 
+        font-size: 28px !important; 
+        white-space: normal; /* মোবাইলে ভেঙে গেলে সমস্যা নেই */
+    }
+}

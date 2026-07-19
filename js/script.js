@@ -34,3 +34,14 @@ const statsSection = document.querySelector('.stats-section');
 if (statsSection) {
     observer.observe(statsSection);
 }
+// ===== Hero Image Slider =====
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+if(slides.length > 0) {
+    setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }, 2500); // 2500 মানে আড়াই সেকেন্ড (2.5s) পর পর ছবি পাল্টাবে
+}
