@@ -568,3 +568,67 @@ footer p {
     .hero-buttons { justify-content: center; flex-wrap: wrap; }
     .card { width: 90%; display: block; margin: 15px auto; }
 }
+
+/* =========================================
+   PHASE 4: WHY CHOOSE US
+========================================= */
+.why-choose-us {
+    padding: 100px 5%;
+    background-color: #ffffff; /* সাদা ব্যাকগ্রাউন্ড যাতে আগের সেকশন থেকে আলাদা লাগে */
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 40px 25px;
+    background: #F8FAF8;
+    border-radius: 16px;
+    transition: all 0.4s ease;
+    border-bottom: 4px solid transparent;
+}
+
+/* Hover Effects */
+.feature-box:hover {
+    transform: translateY(-10px);
+    background: #ffffff;
+    box-shadow: 0 15px 35px rgba(11, 107, 70, 0.08);
+    border-bottom: 4px solid #D4AF37; /* হোভার করলে নিচে গোল্ডেন বর্ডার আসবে */
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: #E8F5E9;
+    border-radius: 50%;
+    transition: transform 0.6s ease;
+}
+
+/* আইকন ঘোরার অ্যানিমেশন */
+.feature-box:hover .feature-icon {
+    transform: rotateY(360deg);
+}
+
+.feature-box h3 {
+    color: #0B5D4B;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.feature-box p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
