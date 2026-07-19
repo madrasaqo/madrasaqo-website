@@ -632,3 +632,118 @@ footer p {
     font-size: 15px;
     line-height: 1.7;
 }
+/* =========================================
+   PHASE 5: STATISTICS / COUNTERS
+========================================= */
+.stats-section {
+    background: linear-gradient(135deg, #0B5D4B 0%, #0B6B46 100%);
+    padding: 80px 5%;
+    color: white;
+    text-align: center;
+}
+
+.stats-container {
+    display: grid;
+    /* এই এক লাইনের কারণেই এটি মোবাইল ও ডেস্কটপে অটোমেটিকভাবে রেসপন্সিভ হবে */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-box {
+    padding: 20px;
+}
+
+.stat-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #D4AF37; /* আইকনের জন্য গোল্ডেন কালার */
+}
+
+.stat-box h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.stat-box p {
+    font-size: 18px;
+    color: #d8e9df;
+    font-weight: 500;
+}
+
+/* ===== Phase 5 Mobile Responsive ===== */
+@media (max-width: 768px) {
+    .stats-section {
+        padding: 50px 5%;
+    }
+    .stats-container {
+        gap: 30px;
+    }
+    .stat-box h2 {
+        font-size: 38px;
+    }
+    .stat-box p {
+        font-size: 16px;
+    }
+}
+/* =========================================
+   PHASE 6: TESTIMONIALS / REVIEWS
+========================================= */
+.testimonials-section {
+    padding: 100px 5%;
+    background-color: #F8FAF8;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    text-align: center;
+    position: relative;
+    border: 1px solid #f0f5f1;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(11, 107, 70, 0.1);
+}
+
+.quote-icon {
+    font-size: 50px;
+    color: #D4AF37;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.reviewer-info h4 {
+    color: #0B5D4B;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.reviewer-info span {
+    color: #777;
+    font-size: 14px;
+}
