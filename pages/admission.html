@@ -1,213 +1,89 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="bn">
 <head>
-
-<title>ভর্তি</title>
-
-<link rel="stylesheet" href="../css/style.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Madrasatul Quran Online</title>
-
-<meta name="google-site-verification" content="h8djcA_XuE7JDsZ3tNhfEzeJBOGKbGJHmrDcB3-2tts" />
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="images/favicon.png">
-
-<meta name="description" content="Learn Quran Online from Qualified Teachers.">
-<meta name="keywords" content="Online Quran, Quran Learning, Madrasatul Quran Online, Quran Teacher, Quran Course, Tajweed, Hifz">
-<meta name="author" content="Madrasatul Quran Online">
-
-<meta property="og:title" content="Madrasatul Quran Online">
-<meta property="og:description" content="Learn Quran Online from Qualified Teachers.">
-<meta property="og:image" content="images/logo.png">
-<meta property="og:type" content="website">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ভর্তি | Madrasatul Quran Online</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
-
-
 <body>
 
-
-<header>
-
-<h1>ভর্তি ফর্ম</h1>
-
-</header>
-
-<section class="admission-intro">
-
-<h2>অনলাইন ভর্তি আবেদন</h2>
-
-<p>
-আপনার সন্তানের তথ্য দিয়ে নিচের ফর্মটি পূরণ করুন।
-আমরা দ্রুত যোগাযোগ করবো।
-</p>
-
-</section>
-
-<section class="admission-box">
-
-
-<h2>অনলাইন ভর্তি আবেদন</h2>
-
-<p>
-নিচের তথ্যগুলো পূরণ করুন। আমরা দ্রুত যোগাযোগ করবো।
-</p>
-
-
-
-<form action="https://script.google.com/macros/s/AKfycbwniRMQjDOOa6nTYBOFeqZ5GcGyEQhQ7OOUIugkbQctv1RtN7S89fbnjOaOHcR-WqPRwA/exec" method="POST">
-
-
-<input 
-type="text" 
-name="name"
-placeholder="শিক্ষার্থীর নাম"required>
-
-
-<input 
-type="number"
-name="age"
-placeholder="শিক্ষার্থীর বয়স"required>
-
-<input 
-type="text"
-name="guardian"
-placeholder="অভিভাবকের নাম" required>
-
-
-
-<input 
-type="tel"
-name="phone"
-placeholder="Whatsapp+880 01xxxxxxxxx" required>
-
-
-<input 
-type="text"
-name="country"
-placeholder="দেশের নাম / ঠিকানা লিখুন" required>
-
-
-<select name="course" required>
-
-<option value="" disabled selected>
-কোর্স
-</option>
-
-
-<option>
-নূরানী কায়দা
-</option>
-
-
-<option>
-তাজবিদ
-</option>
-
-
-<option>
-কুরআন শিক্ষা
-</option>
-
-
-<option>
-নাজেরা
-</option>
-
-
-<option>
-হিফজুল কুরআন
-</option>
-
-
-</select>
-
-
-
-<button 
-type="submit"
-id="submitBtn">
-
-আবেদন করুন
-
-</button>
-
-
-</form>
-<script>
-
-function resetFormState(){
-
-    const form = document.querySelector("form");
-    const btn = document.getElementById("submitBtn");
-
-    if(form){
-        form.reset();
-    }
-
-    if(btn){
-        btn.innerHTML = "আবেদন করুন";
-        btn.disabled = false;
-    }
-
-}
-
-
-// সাধারণভাবে পেজ খুললে
-window.onload = resetFormState;
-
-
-// Back button দিয়ে ফিরলে
-window.onpageshow = function(event){
-
-    if(event.persisted){
-
-        resetFormState();
-
-    }
-
-};
-
-
-const form = document.querySelector("form");
-
-if(form){
-
-form.addEventListener("submit", function(){
-
-    const btn = document.getElementById("submitBtn");
-
-    btn.innerHTML = "⏳ আবেদন পাঠানো হচ্ছে...";
-    btn.disabled = true;
-
-});
-
-}
-
-</script>
-
-
-</section>
-
-
-<footer>
-    <a class="floating-whatsapp" 
-href="https://wa.me/8801933469813"
-target="_blank">
-
-☏
-
-</a>
-
-<p>© Madrasatul Quran Online - MadrasaQO</p>
-
-</footer>
-
+    <header class="main-header">
+        <div class="logo-section">
+            <img src="../images/logo.png" alt="Logo">
+            <div class="logo-text">
+                <h1>Madrasatul Quran Online</h1>
+                <p>আমরা গাই কুরআনের আলোয়</p>
+            </div>
+        </div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="../index.html">হোম</a></li>
+                <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                <li><a href="courses.html">কোর্স</a></li>
+                <li><a href="admission.html">ভর্তি</a></li>
+                <li><a href="contact.html">যোগাযোগ</a></li>
+            </ul>
+        </nav>
+        <a href="admission.html" class="header-btn">ভর্তি করুন</a>
+    </header>
+
+    <section class="admission-intro">
+        <h2>অনলাইন ভর্তি আবেদন</h2>
+        <p>আপনার সন্তানের তথ্য দিয়ে নিচের ফর্মটি পূরণ করুন। আমরা দ্রুত যোগাযোগ করবো।</p>
+    </section>
+
+    <section class="admission-box">
+        <h2>আবেদন ফর্ম</h2>
+        <form action="https://script.google.com/macros/s/AKfycbwniRMQjDOOa6nTYBOFeqZ5GcGyEQhQ7OOUIugkbQctv1RtN7S89fbnjOaOHcR-WqPRwA/exec" method="POST">
+            <input type="text" name="name" placeholder="শিক্ষার্থীর নাম" required>
+            <input type="number" name="age" placeholder="শিক্ষার্থীর বয়স" required>
+            <input type="text" name="guardian" placeholder="অভিভাবকের নাম" required>
+            <input type="tel" name="phone" placeholder="Whatsapp: +880 1xxxxxxxxx" required>
+            <input type="text" name="country" placeholder="দেশের নাম / ঠিকানা লিখুন" required>
+            
+            <select name="course" required>
+                <option value="" disabled selected>কোর্স নির্বাচন করুন</option>
+                <option>নূরানী কায়দা</option>
+                <option>তাজবিদ</option>
+                <option>কুরআন শিক্ষা</option>
+                <option>নাজেরা</option>
+                <option>হিফজুল কুরআন</option>
+            </select>
+            
+            <button type="submit" id="submitBtn">আবেদন করুন</button>
+        </form>
+
+        <script>
+            function resetFormState(){
+                const form = document.querySelector("form");
+                const btn = document.getElementById("submitBtn");
+                if(form) form.reset();
+                if(btn){
+                    btn.innerHTML = "আবেদন করুন";
+                    btn.disabled = false;
+                }
+            }
+            window.onload = resetFormState;
+            window.onpageshow = function(event){
+                if(event.persisted) resetFormState();
+            };
+            const form = document.querySelector("form");
+            if(form){
+                form.addEventListener("submit", function(){
+                    const btn = document.getElementById("submitBtn");
+                    btn.innerHTML = "⏳ আবেদন পাঠানো হচ্ছে...";
+                    btn.disabled = true;
+                });
+            }
+        </script>
+    </section>
+
+    <footer>
+        <p>© Madrasatul Quran Online - MadrasaQO 2026</p>
+    </footer>
+    <a class="floating-whatsapp" href="https://wa.me/8801933469813" target="_blank">☏</a>
 
 </body>
-
 </html>
