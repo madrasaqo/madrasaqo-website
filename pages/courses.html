@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আমাদের কোর্স | Madrasatul Quran Online</title>
+    <title>কোর্সসমূহ - Madrasatul Quran Online</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
 <body>
 
+    <!-- ===== HEADER SECTION ===== -->
     <header class="main-header">
         <div class="logo-section">
-            <img src="../images/logo.png" alt="Logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="Madrasatul Quran Online Logo">
+            </a>
             <div class="logo-text">
-                <h1>Madrasatul Quran Online</h1>
+                <h2>Madrasatul Quran Online</h2>
                 <p>আমরা গাই কুরআনের আলোয়</p>
             </div>
         </div>
@@ -21,7 +24,7 @@
             <ul>
                 <li><a href="../index.html">হোম</a></li>
                 <li><a href="about.html">আমাদের সম্পর্কে</a></li>
-                <li><a href="courses.html">কোর্স</a></li>
+                <li><a href="courses.html" class="active">কোর্স</a></li>
                 <li><a href="admission.html">ভর্তি</a></li>
                 <li><a href="contact.html">যোগাযোগ</a></li>
             </ul>
@@ -29,53 +32,88 @@
         <a href="admission.html" class="header-btn">ভর্তি করুন</a>
     </header>
 
-    <!-- ===== PHASE 3: MODERN COURSE CARDS ===== -->
-    <section class="courses-section">
-        <div class="section-title">
-            <span class="sub-title">আমাদের শিক্ষাক্রম</span>
-            <h2>আমাদের কোর্সসমূহ</h2>
-            <div class="title-divider"></div>
-        </div>
-        
-        <div class="courses-grid">
-            <!-- Course Card 1 -->
-            <div class="course-card">
-                <div class="course-icon">📖</div>
-                <h3>নূরানী কায়দা</h3>
-                <p>শিশুদের জন্য প্রাথমিক কুরআন শিক্ষা, আরবি বর্ণমালা ও সঠিক উচ্চারণের ভিত্তি।</p>
-                <a href="pages/courses.html" class="course-link">বিস্তারিত দেখুন <span>→</span></a>
-            </div>
-
-            <!-- Course Card 2 -->
-            <div class="course-card">
-                <div class="course-icon">🕌</div>
-                <h3>তাজবিদ শিক্ষা</h3>
-                <p>কুরআন মাজীদকে সঠিক মাখরাজ ও সিফাত সহকারে তিলাওয়াত করার নিয়মাবলি।</p>
-                <a href="pages/courses.html" class="course-link">বিস্তারিত দেখুন <span>→</span></a>
-            </div>
-
-            <!-- Course Card 3 -->
-            <div class="course-card">
-                <div class="course-icon">📿</div>
-                <h3>হিফজুল কোরআন</h3>
-                <p>মেধাবী শিক্ষার্থীদের জন্য তারতিলের সাথে সম্পূর্ণ বা আংশিক কোরআন মুখস্থ করা।</p>
-                <a href="pages/courses.html" class="course-link">বিস্তারিত দেখুন <span>→</span></a>
-            </div>
-
-            <!-- Course Card 4 -->
-            <div class="course-card">
-                <div class="course-icon">🕋</div>
-                <h3>কুরআন শিক্ষা</h3>
-                <p>বয়স্ক ও নতুনদের জন্য সহজ পদ্ধতিতে সম্পূর্ণ কুরআন সাবলীলভাবে পড়ার প্রশিক্ষণ।</p>
-                <a href="pages/courses.html" class="course-link">বিস্তারিত দেখুন <span>→</span></a>
-            </div>
+    <!-- ===== PAGE BANNER ===== -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>আমাদের শিক্ষাক্রম ও কোর্সসমূহ</h1>
+            <p>আপনার বা আপনার সন্তানের জন্য উপযুক্ত কোর্সটি বেছে নিন</p>
         </div>
     </section>
 
-    <footer>
-        <p>© Madrasatul Quran Online - MadrasaQO 2026</p>
+    <!-- ===== COURSES DETAILS SECTION ===== -->
+    <section class="courses-section" style="background-color: #f8fbf9; padding: 80px 5%;">
+        <div class="courses-grid">
+            
+            <!-- Course 1 -->
+            <div class="course-card">
+                <div class="course-icon">📖</div>
+                <h3>নূরানী কায়দা</h3>
+                <p>শিশুদের জন্য প্রাথমিক কুরআন শিক্ষা, আরবি বর্ণমালা ও সঠিক উচ্চারণের মজবুত ভিত্তি।</p>
+                <ul class="feature-list" style="text-align: left; margin: 15px 0;">
+                    <li>✔️ বয়স: ৫-১২ বছর</li>
+                    <li>✔️ সপ্তাহে ৩ দিন ক্লাস</li>
+                    <li>✔️ মাসিক ফি: আলোচনা সাপেক্ষে</li>
+                </ul>
+                <a href="admission.html" class="course-link">ভর্তি হোন <span>→</span></a>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card">
+                <div class="course-icon">🎙️</div>
+                <h3>তাজবীদ ও মাখরাজ</h3>
+                <p>কুরআন শুদ্ধভাবে পড়ার নিয়মকানুন। যাদের পড়া ভুল হয়, এই কোর্সটি তাদের জন্য।</p>
+                <ul class="feature-list" style="text-align: left; margin: 15px 0;">
+                    <li>✔️ বয়স: উন্মুক্ত</li>
+                    <li>✔️ সপ্তাহে ৩ দিন ক্লাস</li>
+                    <li>✔️ মাসিক ফি: আলোচনা সাপেক্ষে</li>
+                </ul>
+                <a href="admission.html" class="course-link">ভর্তি হোন <span>→</span></a>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card">
+                <div class="course-icon">🧠</div>
+                <h3>হিফজুল কুরআন</h3>
+                <p>সম্পূর্ণ কুরআন মুখস্থ করার বিশেষ কোর্স। অভিজ্ঞ হাফেজদের সরাসরি তত্ত্বাবধান।</p>
+                <ul class="feature-list" style="text-align: left; margin: 15px 0;">
+                    <li>✔️ বয়স: যেকোনো বয়স</li>
+                    <li>✔️ সপ্তাহে ৫ দিন ক্লাস</li>
+                    <li>✔️ মাসিক ফি: আলোচনা সাপেক্ষে</li>
+                </ul>
+                <a href="admission.html" class="course-link">ভর্তি হোন <span>→</span></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== PREMIUM FOOTER ===== -->
+    <footer class="premium-footer">
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <h3>Madrasatul Quran Online</h3>
+                <p>আমরা গাই কুরআনের আলোয়। ঘরে বসেই অভিজ্ঞ শিক্ষকদের তত্ত্বাবধানে কুরআন শিক্ষা গ্রহণ করুন।</p>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h3>প্রয়োজনীয় লিংক</h3>
+                <ul>
+                    <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                    <li><a href="courses.html">কোর্সসমূহ</a></li>
+                    <li><a href="admission.html">ভর্তি প্রক্রিয়া</a></li>
+                    <li><a href="contact.html">যোগাযোগ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col contact-col">
+                <h3>যোগাযোগ</h3>
+                <p>📞 +880 1707532306</p>
+                <p>✉️ islamicupay@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Madrasatul Quran Online 2026 | All Rights Reserved.</p>
+        </div>
     </footer>
-    <a class="floating-whatsapp" href="https://wa.me/8801707532306" target="_blank">☏</a>
 
 </body>
 </html>
