@@ -747,3 +747,176 @@ footer p {
     color: #777;
     font-size: 14px;
 }
+/* =========================================
+   PHASE 7: FAQ SECTION
+========================================= */
+.faq-section {
+    padding: 100px 5%;
+    background-color: #ffffff; /* সাদা ব্যাকগ্রাউন্ড */
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #F8FAF8;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #e5ebe7;
+}
+
+.faq-item summary {
+    padding: 20px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0B5D4B;
+    cursor: pointer;
+    list-style: none; /* ডিফল্ট তীর চিহ্ন মুছে ফেলা */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Safari ব্রাউজারের ডিফল্ট আইকন মোছার জন্য */
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* কাস্টম (+) আইকন */
+.faq-item summary::after {
+    content: "+";
+    font-size: 26px;
+    color: #D4AF37;
+    transition: transform 0.3s ease;
+}
+
+/* ক্লিক করে খুললে (-) আইকন হবে */
+.faq-item[open] summary::after {
+    content: "−";
+    transform: rotate(180deg);
+}
+
+.faq-content {
+    padding: 0 25px 20px 25px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+/* =========================================
+   PHASE 8: CALL TO ACTION (CTA) & FOOTER
+========================================= */
+.cta-section {
+    background: linear-gradient(135deg, #0B5D4B 0%, #0B6B46 100%);
+    padding: 80px 5%;
+    text-align: center;
+    color: white;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.cta-content p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #d8e9df;
+}
+
+.cta-btn {
+    background: #D4AF37;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 15px 40px;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.cta-btn:hover {
+    background: #b89117;
+    transform: translateY(-3px);
+}
+
+/* Premium Footer */
+.premium-footer {
+    background-color: #053b2f; /* আরও গাঢ় সবুজ ব্যাকগ্রাউন্ড */
+    color: #d8e9df;
+    padding: 60px 5% 0 5%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    text-align: left;
+}
+
+.footer-col h3 {
+    color: #D4AF37;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.links-col ul {
+    list-style: none;
+}
+
+.links-col ul li {
+    margin-bottom: 12px;
+}
+
+.links-col ul li a {
+    color: #d8e9df;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.links-col ul li a:hover {
+    color: #D4AF37;
+    transform: translateX(5px); /* হোভার করলে লেখা হালকা ডানে সরবে */
+}
+
+.footer-bottom {
+    border-top: 1px solid #0d5444;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #a4c4b5;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* CTA Responsive */
+@media (max-width: 768px) {
+    .cta-content h2 {
+        font-size: 26px;
+    }
+    .footer-container {
+        text-align: center;
+    }
+    .links-col ul li a:hover {
+        transform: none;
+    }
+}
