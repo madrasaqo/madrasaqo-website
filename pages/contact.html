@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>যোগাযোগ | Madrasatul Quran Online</title>
+    <title>যোগাযোগ - Madrasatul Quran Online</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
 <body>
 
+    <!-- ===== PREMIUM HEADER ===== -->
     <header class="main-header">
         <div class="logo-section">
-            <img src="../images/logo.png" alt="Logo">
+            <a href="../index.html" style="text-decoration: none;">
+                <img src="../images/logo.png" alt="Madrasatul Quran Online Logo">
+            </a>
             <div class="logo-text">
                 <h1>Madrasatul Quran Online</h1>
                 <p>আমরা গাই কুরআনের আলোয়</p>
@@ -23,22 +25,134 @@
                 <li><a href="about.html">আমাদের সম্পর্কে</a></li>
                 <li><a href="courses.html">কোর্স</a></li>
                 <li><a href="admission.html">ভর্তি</a></li>
-                <li><a href="contact.html">যোগাযোগ</a></li>
+                <li><a href="contact.html" class="active" style="color: #D4AF37;">যোগাযোগ</a></li>
             </ul>
         </nav>
         <a href="admission.html" class="header-btn">ভর্তি করুন</a>
     </header>
 
-    <section>
-        <h2>যোগাযোগ করুন</h2>
-        <a class="whatsapp" href="https://wa.me/8801933469813" target="_blank">WhatsApp-এ মেসেজ দিন</a>
-        <p style="margin-top: 20px; font-size: 18px;">Email: islamicupay@gmail.com</p>
+    <!-- ===== PAGE BANNER ===== -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>যোগাযোগ করুন</h1>
+            <p>যেকোনো তথ্য জানতে আমাদের সাথে যোগাযোগ করুন</p>
+        </div>
     </section>
 
-    <footer>
-        <p>© Madrasatul Quran Online - MadrasaQO 2026</p>
+    <!-- ===== CONTACT DETAILS & MAP SECTION ===== -->
+    <section class="contact-section">
+        <div class="contact-container">
+            
+            <!-- Contact Information Box -->
+            <div class="contact-info">
+                <h2>আমাদের ঠিকানা</h2>
+                <div class="title-divider" style="margin-bottom: 20px;"></div>
+                
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <h4>অফিস</h4>
+                        <p>অনলাইন ভিত্তিক প্রতিষ্ঠান (যেকোনো স্থান থেকে যুক্ত হতে পারবেন)</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <div>
+                        <h4>মোবাইল ও হোয়াটসঅ্যাপ</h4>
+                        <p>+880 17532306</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-icon">✉️</span>
+                    <div>
+                        <h4>ইমেইল</h4>
+                        <p>islamicupay@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-icon">⏰</span>
+                    <div>
+                        <h4>অফিস সময়</h4>
+                        <p>২৪/৭ (যেকোনো সময় যোগাযোগ করতে পারেন)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Map / Quick Message (Optional Display) -->
+            <div class="contact-map">
+                <h2>দ্রুত মেসেজ পাঠান</h2>
+                <div class="title-divider" style="margin-bottom: 20px;"></div>
+                <form id="contactForm" onsubmit="sendContactToWhatsApp(event)" style="margin-top: 20px;">
+                    <input type="text" id="contactName" placeholder="আপনার নাম" class="contact-input" required>
+                    <input type="tel" id="contactPhone" placeholder="মোবাইল নম্বর" class="contact-input" required>
+                    <textarea id="contactMessage" rows="4" placeholder="আপনার মেসেজ লিখুন..." class="contact-input" required></textarea>
+                    <button type="submit" class="submit-btn">মেসেজ পাঠান</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ===== PREMIUM FOOTER ===== -->
+    <footer class="premium-footer">
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <h3>Madrasatul Quran Online</h3>
+                <p>আমরা গাই কুরআনের আলোয়। ঘরে বসেই অভিজ্ঞ শিক্ষকদের তত্ত্বাবধানে নূরানী, তাজবীদ, হিফজ ও কুরআন শিক্ষা গ্রহণ করুন।</p>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h3>প্রয়োজনীয় লিংক</h3>
+                <ul>
+                    <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                    <li><a href="courses.html">কোর্সসমূহ</a></li>
+                    <li><a href="admission.html">ভর্তি প্রক্রিয়া</a></li>
+                    <li><a href="contact.html">যোগাযোগ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col contact-col">
+                <h3>যোগাযোগ</h3>
+                <p>📞 +880 1707532306</p>
+                <p>✉️ islamicupay@gmail.com</p>
+                <p>🌐 24/7 অনলাইন ক্লাস</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© Madrasatul Quran Online 2026 | All Rights Reserved.</p>
+        </div>
     </footer>
-    <a class="floating-whatsapp" href="https://wa.me/8801707532306" target="_blank">☏</a>
+
+    <!-- WhatsApp Integration Script for Contact Page -->
+    <script>
+        function sendContactToWhatsApp(event) {
+            event.preventDefault(); // পেজ রিলোড হওয়া বন্ধ করবে
+
+            // ফর্ম থেকে তথ্যগুলো সংগ্রহ করা
+            let name = document.getElementById("contactName").value;
+            let phone = document.getElementById("contactPhone").value;
+            let userMessage = document.getElementById("contactMessage").value;
+
+            // আপনার হোয়াটসঅ্যাপ নাম্বার (কান্ট্রি কোড সহ, কোনো + বা স্পেস ছাড়া)
+            let whatsappNumber = "8801707532306"; 
+
+            // হোয়াটসঅ্যাপে যে মেসেজটি যাবে সেটি সাজানো
+            let message = "আসসালামু আলাইকুম, আমার একটি জিজ্ঞাসা ছিল:\n\n";
+            message += "👤 নাম: " + name + "\n";
+            message += "📞 মোবাইল: " + phone + "\n";
+            message += "💬 মেসেজ: " + userMessage;
+
+            // হোয়াটসঅ্যাপের লিংক তৈরি করা
+            let whatsappLink = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+
+            // নতুন ট্যাবে হোয়াটসঅ্যাপ ওপেন করা
+            window.open(whatsappLink, "_blank");
+        }
+    </script>
 
 </body>
 </html>

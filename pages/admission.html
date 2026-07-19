@@ -45,29 +45,29 @@
             <h2 style="text-align: center; color: #0B5D4B; margin-bottom: 20px;">আপনার তথ্য দিন</h2>
             <p style="text-align: center; margin-bottom: 30px; color: #555;">নিচের ফর্মটি পূরণ করুন, আমাদের প্রতিনিধি খুব দ্রুত আপনার সাথে যোগাযোগ করবেন।</p>
             
-            <form action="#" method="POST">
+            <form id="admissionForm" onsubmit="sendToWhatsApp(event)">
                 <div class="form-group">
                     <label for="name">শিক্ষার্থীর নাম *</label>
-                    <input type="text" id="name" name="name" placeholder="আপনার পুরো নাম লিখুন" required>
+                    <input type="text" id="studentName" placeholder="আপনার পুরো নাম লিখুন" required>
                 </div>
                 
                 <div class="form-group">
                     <label for="phone">মোবাইল নাম্বার *</label>
-                    <input type="tel" id="phone" name="phone" placeholder="017XXXXXXXX" required>
+                    <input type="tel" id="studentPhone" placeholder="017XXXXXXXX" required>
                 </div>
 
                 <div class="form-group">
                     <label for="age">শিক্ষার্থীর বয়স *</label>
-                    <input type="number" id="age" name="age" placeholder="বয়স লিখুন" required>
+                    <input type="number" id="studentAge" placeholder="বয়স লিখুন" required>
                 </div>
                 
                 <div class="form-group">
                     <label for="course">কোন কোর্সে ভর্তি হতে চান? *</label>
-                    <select id="course" name="course" required>
+                    <select id="studentCourse" required>
                         <option value="">-- কোর্স নির্বাচন করুন --</option>
-                        <option value="nurani">নূরানী কায়দা</option>
-                        <option value="tajweed">তাজবীদ ও মাখরাজ</option>
-                        <option value="hifz">হিফজুল কুরআন</option>
+                        <option value="নূরানী কায়দা">নূরানী কায়দা</option>
+                        <option value="তাজবীদ ও মাখরাজ">তাজবীদ ও মাখরাজ</option>
+                        <option value="হিফজুল কুরআন">হিফজুল কুরআন</option>
                     </select>
                 </div>
                 
@@ -106,6 +106,34 @@
             <p>© Madrasatul Quran Online 2026 | All Rights Reserved.</p>
         </div>
     </footer>
+    <!-- WhatsApp Integration Script -->
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault(); // পেজ রিলোড হওয়া বন্ধ করবে
+
+            // ফর্ম থেকে তথ্যগুলো সংগ্রহ করা
+            let name = document.getElementById("studentName").value;
+            let phone = document.getElementById("studentPhone").value;
+            let age = document.getElementById("studentAge").value;
+            let course = document.getElementById("studentCourse").value;
+
+            // আপনার হোয়াটসঅ্যাপ নাম্বার (কান্ট্রি কোড সহ, কোনো + বা স্পেস ছাড়া)
+            let whatsappNumber = "8801707532306"; 
+
+            // হোয়াটসঅ্যাপে যে মেসেজটি যাবে সেটি সাজানো
+            let message = "আসসালামু আলাইকুম, আমি 'Madrasatul Quran Online'-এ ভর্তি হতে চাই।\n\n";
+            message += "👤 শিক্ষার্থীর নাম: " + name + "\n";
+            message += "📞 মোবাইল নাম্বার: " + phone + "\n";
+            message += "⏳ বয়স: " + age + " বছর\n";
+            message += "📖 কোর্সের নাম: " + course;
+
+            // হোয়াটসঅ্যাপের লিংক তৈরি করা
+            let whatsappLink = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+
+            // নতুন ট্যাবে হোয়াটসঅ্যাপ ওপেন করা
+            window.open(whatsappLink, "_blank");
+        }
+    </script>
 
 </body>
 </html>
