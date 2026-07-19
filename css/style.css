@@ -921,53 +921,65 @@ footer p {
     }
 }
 /* =========================================
-   FIXES: LOGO, TEXT SIZE & SLIDER
+   FIXES: LOGO, HERO TEXT & SLOW MOTION SLIDER
 ========================================= */
 
-/* ১. লোগো ফিক্স (সাদা ব্যাকগ্রাউন্ড ও হালকা গ্লো) */
+/* ১. লোগো সাইজ বড় করা */
 .logo-section img {
+    width: 90px !important; /* আগের চেয়ে বড় করা হয়েছে */
+    height: 90px !important;
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 3px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    object-fit: contain;
 }
 
-/* ২. টাইটেল ফিক্স (এক লাইনে রাখা ও সাইজ কমানো) */
+/* ২. প্যারাগ্রাফ ও টাইটেল ফিক্স (দুই লাইনে আসার জন্য) */
 .hero-text h1 {
-    font-size: 34px !important;
-    white-space: nowrap; /* লেখা এক লাইনে রাখবে */
+    font-size: 38px !important;
+    white-space: normal; 
+}
+.hero-text p {
+    max-width: 95%; /* লেখাটি সুন্দরভাবে দুই লাইনে আসবে */
+    white-space: normal !important;
 }
 
-/* ৩. স্লাইডার ডিজাইন */
+/* ৩. ডান পাশের ছবি বড় করা (পুরো জায়গা জুড়ে) */
+.hero-image {
+    flex: 1.5; /* আগের চেয়ে বেশি জায়গা নিবে */
+    display: flex;
+    justify-content: flex-end;
+}
 .slider-container {
     position: relative;
     width: 100%;
-    max-width: 550px;
-    aspect-ratio: 16/9; /* ছবির অনুপাত সুন্দর রাখবে */
-    margin: auto;
-    border-radius: 12px;
+    max-width: 750px; /* বক্সের সাইজ অনেক বড় করা হলো */
+    height: 420px; /* উচ্চতা বাড়ানো হলো */
+    border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 20px 40px rgba(11, 107, 70, 0.2);
 }
 
+/* ৪. স্লো মোশন স্লাইড অ্যানিমেশন (ডান থেকে বামে) */
 .slide {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* ছবি পুরো বক্সে ফিট হবে */
-    opacity: 0;
-    transition: opacity 1s ease-in-out; /* ছবি পরিবর্তনের স্মুথ অ্যানিমেশন */
+    object-fit: cover;
+    transform: translateX(100%); /* শুরুতে ডানদিকে থাকবে */
+    transition: transform 1.5s ease-in-out; /* 1.5 সেকেন্ড ধরে ধীর গতিতে আসবে/যাবে */
 }
-
 .slide.active {
-    opacity: 1;
+    transform: translateX(0); /* স্ক্রিনের মাঝে আসবে */
 }
-
-/* মোবাইল ভিউ ফিক্স */
-@media (max-width: 1024px) {
-    .hero-text h1 { 
-        font-size: 28px !important; 
-        white-space: normal; /* মোবাইলে ভেঙে গেলে সমস্যা নেই */
-    }
+.slide.exit {
+    transform: translateX(-100%); /* বাম দিকে ধীর গতিতে চলে যাবে */
+}
+/* ছবিটি আবার ডানদিকে ফেরার সময় যেন চোখে না পড়ে তার জন্য */
+.slide.snap {
+    transition: none !important; 
+    transform: translateX(100%);
 }
