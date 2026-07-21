@@ -3,94 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আমাদের সম্পর্কে - Madrasatul Quran Online</title>
-    <!-- CSS লিংক -->
+    <title>আমাদের সম্পর্কে | Madrasatul Quran Online</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-    <!-- ===== PREMIUM HEADER (Corrected) ===== -->
+    <!-- Header Section -->
     <header class="main-header">
-        <div class="logo-section">
-            <a href="../index.html" style="text-decoration: none;">
-                <img src="../images/logo.png" alt="Madrasatul Quran Online Logo">
+        <div class="header-container">
+            <a href="../index.html" class="brand-link">
+                <div class="logo-bg">
+                    <img src="../images/logo.png" alt="MadrasaQO Logo" class="site-logo">
+                </div>
+                <div class="brand-text">
+                    <span class="site-name">Madrasatul Quran Online</span>
+                    <span class="site-tagline">আমরা গাই কুরআনের আলোয়</span>
+                </div>
             </a>
-            <div class="logo-text">
-                <h1>Madrasatul Quran Online</h1>
-                <p>আমরা গাই কুরআনের আলোয়</p>
-            </div>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">হোম</a></li>
+                    <li><a href="about.html" class="nav-link active">আমাদের সম্পর্কে</a></li>
+                    <li><a href="courses.html" class="nav-link">কোর্স</a></li>
+                    <li><a href="books.html" class="nav-link">আমাদের বই</a></li>
+                    <li><a href="contact.html" class="nav-link">যোগাযোগ</a></li>
+                </ul>
+                <a href="admission.html" class="btn-admission-header">ভর্তি করুন</a>
+            </nav>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
-        <nav class="desktop-nav">
-            <ul>
-                <li><a href="../index.html">হোম</a></li>
-                <li><a href="about.html" class="active" style="color: #D4AF37;">আমাদের সম্পর্কে</a></li>
-                <li><a href="courses.html">কোর্স</a></li>
-                <li><a href="admission.html">ভর্তি</a></li>
-                <li><a href="contact.html">যোগাযোগ</a></li>
-            </ul>
-        </nav>
-        <a href="admission.html" class="header-btn">ভর্তি করুন</a>
     </header>
 
-    <!-- ===== PAGE BANNER ===== -->
+   <!-- Page Sub-Banner -->
     <section class="page-banner">
-        <div class="banner-content">
+        <div class="page-banner-container">
             <h1>আমাদের সম্পর্কে</h1>
-            <p>কুরআনের আলো ছড়িয়ে দেওয়ার এক অবিরাম প্রচেষ্টা</p>
+            <div class="breadcrumb">
+                <a href="../index.html">হোম</a> / <span>আমাদের সম্পর্কে</span>
+            </div>
         </div>
     </section>
 
-    <!-- ===== ABOUT DETAILS SECTION ===== -->
-    <section class="about-details">
+    <!-- About Main Content -->
+    <section class="about-section">
         <div class="about-container">
-            <div class="about-text-box">
-                <h2>আমাদের লক্ষ্য ও উদ্দেশ্য</h2>
-                <div class="title-divider"></div>
-                <p><strong>Madrasatul Quran Online</strong> একটি বিশ্বস্ত অনলাইন ভিত্তিক দ্বীনি শিক্ষা প্রতিষ্ঠান। আমাদের মূল লক্ষ্য হলো পৃথিবীর যেকোনো প্রান্তে বসে প্রতিটি মুসলিম যেন সহীহ ও শুদ্ধভাবে কুরআন শিখতে পারে, তা নিশ্চিত করা।</p>
-                <p>আমাদের রয়েছে দক্ষ, অভিজ্ঞ ও হাফেজ-আলেমদের একটি শক্তিশালী প্যানেল। যারা অত্যন্ত যত্ন সহকারে শিশু থেকে শুরু করে বয়স্ক—সবাইকে কুরআন ও ইসলামি বুনিয়াদি শিক্ষা প্রদান করে থাকেন।</p>
+            
+            <div class="about-text">
+                <h2>মাদরাসাতুল কুরআন অনলাইন-এ আপনাকে স্বাগতম</h2>
+                <p>আমরা বিশ্বাস করি, দ্বীনি শিক্ষা প্রতিটি মুসলিমের অধিকার। ভৌগোলিক দূরত্ব বা সময়ের ব্যস্ততা যেন কুরআন শিক্ষার পথে বাধা না হয়, সেই লক্ষ্যেই আমাদের এই অনলাইন উদ্যোগ।</p>
+                <p>আমাদের রয়েছে দেশ-বিদেশের অভিজ্ঞ ও সনদপ্রাপ্ত শিক্ষক-শিক্ষিকা মণ্ডলী, যারা অত্যন্ত ধৈর্য ও স্নেহের সাথে প্রতিটি শিক্ষার্থীকে বিশুদ্ধ তাজবীদসহ কুরআন শিক্ষা দিয়ে থাকেন।</p>
                 
-                <h3>কেন আমাদের বেছে নেবেন?</h3>
-                <ul class="feature-list">
-                    <li>✅ ঘরে বসেই ২৪/৭ লাইভ ক্লাস করার সুবিধা।</li>
-                    <li>✅ সম্পূর্ণ সহীহ ও তাজবীদ ভিত্তিক কুরআন শিক্ষা।</li>
-                    <li>✅ মহিলা ও শিশুদের জন্য অভিজ্ঞ মহিলা শিক্ষিকার ব্যবস্থা।</li>
-                    <li>✅ প্রতিটি শিক্ষার্থীর জন্য আলাদা ও বিশেষ যত্ন।</li>
-                    <li>✅ প্রবাসীদের জন্য তাদের সুবিধামতো সময়ে ক্লাসের সুযোগ।</li>
-                </ul>
+                <div class="mission-vision-grid">
+                    <div class="mv-box">
+                        <h4>🎯 আমাদের লক্ষ্য</h4>
+                        <p>বিশ্বের প্রতিটি ঘরে বিশুদ্ধ কুরআন তিলাওয়াতের দ্যুতি পৌঁছে দেওয়া।</p>
+                    </div>
+                    <div class="mv-box">
+                        <h4>👁️ আমাদের ভিশন</h4>
+                        <p>প্রযুক্তির সর্বোচ্চ ব্যবহারে দ্বীনি শিক্ষাকে সবার জন্য সহজগম্য করা।</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <img src="../images/Cover Page.png" alt="About Madrasatul Quran Online">
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- ===== PREMIUM FOOTER ===== -->
-    <footer class="premium-footer">
+    <!-- ==========================================================================
+         FOOTER SECTION
+         ========================================================================== -->
+    <footer class="main-footer">
         <div class="footer-container">
-            <div class="footer-col about-col">
-                <h3>Madrasatul Quran Online</h3>
-                <p>আমরা গাই কুরআনের আলোয়। ঘরে বসেই অভিজ্ঞ শিক্ষকদের তত্ত্বাবধানে নূরানী, তাজবীদ, হিফজ ও কুরআন শিক্ষা গ্রহণ করুন।</p>
-            </div>
             
-            <div class="footer-col links-col">
-                <h3>প্রয়োজনীয় লিংক</h3>
-                <ul>
+            <!-- Col 1: About -->
+            <div class="footer-col footer-about">
+                <h3>Madrasatul Quran Online</h3>
+                <p>আমরা আধুনিক প্রযুক্তি ও ঐতিহ্যবাহী দ্বীনি শিক্ষার সমন্বয়ে ঘরে বসেই বিশুদ্ধ কুরআন শিক্ষার একটি নির্ভরযোগ্য অনলাইন প্রতিষ্ঠান।</p>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div class="footer-col">
+                <h4>কুইক লিংক</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html">হোম</a></li>
                     <li><a href="about.html">আমাদের সম্পর্কে</a></li>
                     <li><a href="courses.html">কোর্সসমূহ</a></li>
-                    <li><a href="admission.html">ভর্তি প্রক্রিয়া</a></li>
+                    <li><a href="admission.html">অনলাইন ভর্তি</a></li>
                     <li><a href="contact.html">যোগাযোগ</a></li>
                 </ul>
             </div>
-            
-            <div class="footer-col contact-col">
-                <h3>যোগাযোগ</h3>
-                <p>📞 +880 1707532306</p>
-                <p>✉️ islamicupay@gmail.com</p>
-                <p>🌐 24/7 অনলাইন ক্লাস</p>
+
+            <!-- Col 3: Courses -->
+            <div class="footer-col">
+                <h4>আমাদের কোর্স</h4>
+                <ul class="footer-links">
+                    <li><a href="courses.html#qaida">নূরানী কায়দা</a></li>
+                    <li><a href="courses.html#tajweed">তাজবিদ শিক্ষা</a></li>
+                    <li><a href="courses.html#hifz">হিফজুল কোরআন</a></li>
+                    <li><a href="courses.html#quran">কুরআন শিক্ষা</a></li>
+                </ul>
             </div>
+
+            <!-- Col 4: Contact Info -->
+            <div class="footer-col">
+                <h4>যোগাযোগ</h4>
+                <ul class="contact-info">
+                    <li>📍 ঢাকা, বাংলাদেশ</li>
+                    <li>📞 +880 1707532306</li>
+                    <li>✉️ info.madrasaqo@gmail.com</li>
+                </ul>
+            </div>
+
         </div>
-        
+
+        <!-- Bottom Copyright -->
         <div class="footer-bottom">
-            <p>© Madrasatul Quran Online 2026 | All Rights Reserved.</p>
+            <p>Copyright &copy; 2026 Madrasaqo.com</p>
         </div>
     </footer>
 
+    <!-- Script for Mobile Menu -->
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+    <!-- Floating WhatsApp Icon -->
+<a href="https://wa.me/8801707532306" class="whatsapp-float" target="_blank" aria-label="WhatsApp-এ যোগাযোগ করুন">
+    <svg viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+</a>
 </body>
 </html>

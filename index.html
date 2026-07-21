@@ -4,298 +4,410 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madrasatul Quran Online | Learn Quran with Confidence</title>
+    
+    <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="h8djcA_XuE7JDsZ3tNhfEzeJBOGKbGJHmrDcB3-2tts" />
-    <meta name="description" content="ঘরে বসেই অভিজ্ঞ শিক্ষকদের তত্ত্বাবধানে নূরানী,তাজবীদ, হিফজ ও কুরআন শিক্ষা গ্রহণ করুন।">
+    
+    <!-- SEO & Open Graph Meta Tags -->
+    <meta name="description" content="ঘরে বসেই অভিজ্ঞ শিক্ষকদের তত্ত্বাবধানে নূরানী, তাজবীদ, হিফজ ও কুরআন শিক্ষা গ্রহণ করুন।">
     <meta name="keywords" content="Online Quran, Quran Learning, Madrasatul Quran Online, Quran Teacher, Tajweed, Hifz">
     <meta name="author" content="Madrasatul Quran Online">
     <meta property="og:title" content="Madrasatul Quran Online">
     <meta property="og:description" content="Learn Quran Online from Qualified Teachers.">
     <meta property="og:image" content="images/logo.png">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts: Hind Siliguri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Premium Header -->
+
+    <!-- ==========================================================================
+         PHASE 1: PREMIUM STICKY HEADER & NAVIGATION
+         ========================================================================== -->
     <header class="main-header">
-        <div class="logo-section">
-            <img src="images/logo.png" alt="Madrasatul Quran Online Logo">
-            <div class="logo-text">
-                <h1>Madrasatul Quran Online</h1>
-                <p>আমরা গাই কুরআনের আলোয়</p>
-            </div>
+        <div class="header-container">
+            
+            <!-- Brand Logo & Title -->
+            <a href="index.html" class="brand-link">
+                <div class="logo-bg">
+                    <img src="images/logo.png" alt="MadrasaQO Logo" class="site-logo">
+                </div>
+                <div class="brand-text">
+                    <span class="site-name">Madrasatul Quran Online</span>
+                    <span class="site-tagline">আমরা গাই কুরআনের আলোয়</span>
+                </div>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">হোম</a></li>
+                    <li><a href="pages/about.html" class="nav-link">আমাদের সম্পর্কে</a></li>
+                    <li><a href="pages/courses.html" class="nav-link">কোর্স</a></li>
+                    <li><a href="pages/books.html">আমাদের বই</a></li>
+                    <li><a href="pages/contact.html" class="nav-link">যোগাযোগ</a></li>
+                </ul>
+                <a href="pages/admission.html" class="btn-admission-header">ভর্তি করুন</a>
+            </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
         </div>
-        <nav class="desktop-nav">
-            <ul>
-                <li><a href="index.html">হোম</a></li>
-                <li><a href="pages/about.html">আমাদের সম্পর্কে</a></li>
-                <li><a href="pages/courses.html">কোর্স</a></li>
-                <li><a href="pages/admission.html">ভর্তি</a></li>
-                <li><a href="pages/contact.html">যোগাযোগ</a></li>
-            </ul>
-        </nav>
-        <a href="pages/admission.html" class="header-btn">ভর্তি করুন</a>
     </header>
-    <!-- ===== PHASE 2: PREMIUM HERO SECTION ===== -->
+
+    <!-- ==========================================================================
+         PHASE 2: PREMIUM HERO SECTION WITH SVG WAVE
+         ========================================================================== -->
     <section class="hero-section">
         <div class="hero-container">
+            
+            <!-- Hero Text Content -->
             <div class="hero-text">
                 <span class="hero-tag">🌿 Learn Quran Online with Confidence</span>
                 <h1>Madrasatul Quran Online</h1>
                 <p>ঘরে বসেই অভিজ্ঞ শিক্ষকদের তত্ত্বাবধানে <br> নূরানী, তাজবীদ, হিফজ ও কুরআন শিক্ষা গ্রহণ করুন।</p>
                 <div class="hero-buttons">
-                    <a href="pages/admission.html" class="btn">ভর্তি করুন</a>
-                    <a href="pages/courses.html" class="btn-outline">কোর্সসমূহ</a>
-                </div>
-            <!-- হিরো ইমেজ (Single Professional Image) -->
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="images/Cover Page.png" alt="Madrasatul Quran Online">
+                    <a href="pages/admission.html" class="btn btn-primary">ভর্তি করুন</a>
+                    <a href="#courses" class="btn btn-outline">কোর্সসমূহ</a>
                 </div>
             </div>
-        <!-- Wave Divider -->
+
+            <!-- Hero Banner Image -->
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="images/Cover Page.png" alt="Madrasatul Quran Online Banner">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Wave Divider -->
         <div class="custom-shape-divider-bottom">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.06,130.83,119.28,198.81,108.97c62.1-9.45,120.94-27.13,182.58-42.53Z" class="shape-fill"></path>
             </svg>
         </div>
     </section>
-    <!-- Courses Section -->
-    <!-- ===== PHASE 3: MODERN COURSE CARDS ===== -->
-    <section class="courses-section">
-        <div class="section-title">
-            <span class="sub-title">আমাদের শিক্ষাক্রম</span>
-            <h2>আমাদের কোর্সসমূহ</h2>
-            <div class="title-divider"></div>
-        </div>
-        
-        <div class="courses-grid">
-            <!-- Course Card 1 -->
-            <div class="course-card">
-                <div class="course-icon">📖</div>
-                <h3>নূরানী কায়দা</h3>
-                <p>শিশুদের জন্য প্রাথমিক কুরআন শিক্ষা, আরবি বর্ণমালা ও সঠিক উচ্চারণের ভিত্তি।</p>
-                <a href="pages/courses.html" class="course-link">বিস্তারিত দেখুন <span>→</span></a>
-            </div>
 
-            <!-- Course Card 2 -->
-            <div class="course-card">
-                <div class="course-icon">🕌</div>
-                <h3>তাজবিদ শিক্ষা</h3>
-                <p>কুরআন মাজীদকে সঠিক মাখরাজ ও সিফাত সহকারে তিলাওয়াত করার নিয়মাবলি।</p>
-                <a href="pages/courses.html" class="course-link">বিস্তারিত দেখুন <span>→</span></a>
-            </div>
-
-            <!-- Course Card 3 -->
-            <div class="course-card">
-                <div class="course-icon">📿</div>
-                <h3>হিফজুল কোরআন</h3>
-                <p>মেধাবী শিক্ষার্থীদের জন্য তারতিলের সাথে সম্পূর্ণ বা আংশিক কোরআন মুখস্থ করা।</p>
-                <a href="pages/courses.html" class="course-link">বিস্তারিত দেখুন <span>→</span></a>
-            </div>
-
-            <!-- Course Card 4 -->
-            <div class="course-card">
-                <div class="course-icon">🕋</div>
-                <h3>কুরআন শিক্ষা</h3>
-                <p>বয়স্ক ও নতুনদের জন্য সহজ পদ্ধতিতে সম্পূর্ণ কুরআন সাবলীলভাবে পড়ার প্রশিক্ষণ।</p>
-                <a href="pages/courses.html" class="course-link">বিস্তারিত দেখুন <span>→</span></a>
-            </div>
-        </div>
-    </section>
-    <!-- ===== PHASE 4: WHY CHOOSE US ===== -->
-    <section class="why-choose-us">
-        <div class="section-title">
-            <span class="sub-title">আমাদের বৈশিষ্ট্য</span>
-            <h2>কেন আমাদের বেছে নিবেন?</h2>
-            <div class="title-divider"></div>
-        </div>
-        
-        <div class="features-grid">
-            <!-- Feature 1 -->
-            <div class="feature-box">
-                <div class="feature-icon">👨‍🏫</div>
-                <h3>অভিজ্ঞ ও দক্ষ শিক্ষক</h3>
-                <p>আমাদের রয়েছেন উচ্চ শিক্ষিত, অভিজ্ঞ এবং হাফেজ ও আলেম শিক্ষক মণ্ডলী, যারা অত্যন্ত যত্ন সহকারে শিক্ষা প্রদান করেন।</p>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="feature-box">
-                <div class="feature-icon">⏰</div>
-                <h3>সুবিধাজনক সময়</h3>
-                <p>শিক্ষার্থীদের সুবিধা অনুযায়ী ২৪/৭ যেকোনো সময় ক্লাস করার সুযোগ রয়েছে। প্রবাসীদের জন্য রয়েছে বিশেষ সময়সূচি।</p>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="feature-box">
-                <div class="feature-icon">💻</div>
-                <h3>ওয়ান-টু-ওয়ান ক্লাস</h3>
-                <p>প্রতিটি শিক্ষার্থীর প্রতি বিশেষ মনোযোগ দিতে আমরা ওয়ান-টু-ওয়ান (একজন শিক্ষক ও একজন ছাত্র) ক্লাস প্রদান করি।</p>
-            </div>
-
-            <!-- Feature 4 -->
-            <div class="feature-box">
-                <div class="feature-icon">🏆</div>
-                <h3>মাসিক মূল্যায়ন</h3>
-                <p>শিক্ষার্থীর অগ্রগতি যাচাই করার জন্য প্রতি মাসে নিয়মিত পরীক্ষা ও অভিভাবকদের সাথে মতবিনিময় করা হয়।</p>
-            </div>
-        </div>
-    </section>
-        <!-- ===== PHASE 6: TESTIMONIALS / REVIEWS ===== -->
-    <section class="testimonials-section">
-        <div class="section-title">
-            <span class="sub-title">মতামত</span>
-            <h2>শিক্ষার্থী ও অভিভাবকদের কথা</h2>
-            <div class="title-divider"></div>
-        </div>
-        
-        <div class="testimonials-grid">
-            <!-- Review 1 -->
-            <div class="review-card">
-                <div class="quote-icon">❝</div>
-                <p class="review-text">"আলহামদুলিল্লাহ, আমার ছেলে খুব অল্প সময়েই কুরআন রিডিং পড়া শিখেছে। ওস্তাদজি অনেক যত্ন নিয়ে পড়ান। আমি সত্যিই আনন্দিত।"</p>
-                <div class="reviewer-info">
-                    <h4>আব্দুর রহমান</h4>
-                    <span>অভিভাবক (দুবাই)</span>
-                </div>
-            </div>
-
-            <!-- Review 2 -->
-            <div class="review-card">
-                <div class="quote-icon">❝</div>
-                <p class="review-text">"তাজবিদসহ কুরআন শেখার জন্য এটি একটি সেরা প্ল্যাটফর্ম। সময়গুলোও ফ্লেক্সিবল, তাই অফিসের পাশাপাশি ক্লাস করতে কোনো সমস্যা হয় না।"</p>
-                <div class="reviewer-info">
-                    <h4>মাহমুদুল হাসান</h4>
-                    <span>শিক্ষার্থী (ঢাকা)</span>
-                </div>
-            </div>
-
-            <!-- Review 3 -->
-            <div class="review-card">
-                <div class="quote-icon">❝</div>
-                <p class="review-text">"ওয়ান-টু-ওয়ান ক্লাস হওয়ায় আমার মেয়ে খুব দ্রুত হিফজ সম্পন্ন করছে। শিক্ষকদের আন্তরিকতা সত্যিই প্রশংসনীয়।"</p>
-                <div class="reviewer-info">
-                    <h4>ফাতেমা বেগম</h4>
-                    <span>অভিভাবক (যুক্তরাজ্য)</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ===== PHASE 5: STATISTICS / ANIMATED COUNTERS ===== -->
+    <!-- ==========================================================================
+         PHASE 3: STATISTICS / ANIMATED COUNTERS
+         ========================================================================== -->
     <section class="stats-section">
         <div class="stats-container">
-            <!-- Counter 1 -->
-            <div class="stat-box">
-                <div class="stat-icon">🎓</div>
-                <h2 class="counter" data-target="1250">0</h2>
-                <p>সফল শিক্ষার্থী</p>
-            </div>
-            <!-- Counter 2 -->
-            <div class="stat-box">
-                <div class="stat-icon">👨‍🏫</div>
-                <h2 class="counter" data-target="45">0</h2>
-                <p>দক্ষ শিক্ষক</p>
-            </div>
-            <!-- Counter 3 -->
-            <div class="stat-box">
-                <div class="stat-icon">📚</div>
-                <h2 class="counter" data-target="15">0</h2>
-                <p>মোট কোর্স</p>
-            </div>
-            <!-- Counter 4 -->
-            <div class="stat-box">
-                <div class="stat-icon">⭐</div>
-                <h2 class="counter" data-target="100">0</h2>
-                <p>সন্তুষ্টির হার (%)</p>
-            </div>
-        </div>
-    </section>
-    <!-- ===== PHASE 7: FAQ (Frequently Asked Questions) ===== -->
-    <section class="faq-section">
-        <div class="section-title">
-            <span class="sub-title">জিজ্ঞাসা</span>
-            <h2>সাধারণ প্রশ্নোত্তর (FAQ)</h2>
-            <div class="title-divider"></div>
-        </div>
-        
-        <div class="faq-container">
-            <!-- Question 1 -->
-            <details class="faq-item">
-                <summary>ক্লাসগুলো কিভাবে নেওয়া হয়?</summary>
-                <div class="faq-content">
-                    <p>আমাদের সবগুলো ক্লাস জুম (Zoom) বা গুগল মিট (Google Meet) এর মাধ্যমে লাইভ ভিডিও কলে নেওয়া হয়, যেন শিক্ষক ও শিক্ষার্থী সরাসরি কথা বলে ক্লাস করতে পারে।</p>
-                </div>
-            </details>
-
-            <!-- Question 2 -->
-            <details class="faq-item">
-                <summary>আমি কি নিজের সুবিধামতো সময়ে ক্লাস করতে পারব?</summary>
-                <div class="faq-content">
-                    <p>হ্যাঁ, অবশ্যই! আমরা ২৪/৭ ক্লাস পরিচালনা করি। আপনি বা আপনার সন্তানের সুবিধামতো যেকোনো সময় বেছে নিতে পারবেন। প্রবাসীদের জন্য বিশেষ সময়ের ব্যবস্থা রয়েছে।</p>
-                </div>
-            </details>
-
-            <!-- Question 3 -->
-            <details class="faq-item">
-                <summary>ক্লাস করার জন্য কী কী প্রয়োজন?</summary>
-                <div class="faq-content">
-                    <p>ক্লাস করার জন্য একটি স্মার্টফোন, ট্যাবলেট বা ল্যাপটপ এবং একটি ভালো ইন্টারনেট কানেকশনই যথেষ্ট।</p>
-                </div>
-            </details>
-
-            <!-- Question 4 -->
-            <details class="faq-item">
-                <summary>মেয়েদের জন্য কি মহিলা শিক্ষিকা আছেন?</summary>
-                <div class="faq-content">
-                    <p>আলহামদুলিল্লাহ, পর্দা রক্ষার্থে মেয়েদের এবং শিশুদের জন্য আমাদের সুদক্ষ ও অভিজ্ঞ মহিলা শিক্ষিকা রয়েছেন।</p>
-                </div>
-            </details>
-        </div>
-    </section>
-
-    <!-- Footer & WhatsApp -->
-    <!-- ===== PHASE 8: CALL TO ACTION (CTA) ===== -->
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>আপনার সন্তানের উজ্জ্বল ভবিষ্যতের জন্য আজই ভর্তি করুন</h2>
-            <p>আমাদের অভিজ্ঞ শিক্ষকদের তত্ত্বাবধানে ঘরে বসেই শুরু হোক কুরআন শেখার সুন্দর যাত্রা।</p>
-            <a href="pages/admission.html" class="btn cta-btn">ভর্তি ফর্ম পূরণ করুন</a>
-        </div>
-    </section>
-
-    <!-- ===== PREMIUM FOOTER ===== -->
-    <footer class="premium-footer">
-        <div class="footer-container">
-            <div class="footer-col about-col">
-                <h3>Madrasatul Quran Online</h3>
-                <p>আমরা গাই কুরআনের আলোয়। ঘরে বসেই অভিজ্ঞ শিক্ষকদের তত্ত্বাবধানে নূরানী, তাজবীদ, হিফজ ও <br> কুরআন শিক্ষা গ্রহণ করুন।</p>
-            </div>
             
-            <div class="footer-col links-col">
-                <h3>প্রয়োজনীয় লিংক</h3>
-                <ul>
+            <div class="stat-card">
+                <div class="stat-icon">🎓</div>
+                <div class="stat-number" data-target="500">0</div>
+                <div class="stat-label">সফল শিক্ষার্থী</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">👨‍🏫</div>
+                <div class="stat-number" data-target="20">0</div>
+                <div class="stat-label">দক্ষ শিক্ষক</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📚</div>
+                <div class="stat-number" data-target="4">0</div>
+                <div class="stat-label">মোট কোর্স</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⭐</div>
+                <div class="stat-number" data-target="99">0</div>
+                <div class="stat-label">সন্তুষ্টির হার (%)</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         PHASE 4: OUR COURSES SECTION
+         ========================================================================== -->
+    <section class="courses-section" id="courses">
+        <div class="courses-container">
+            
+            <div class="section-title">
+                <span class="sub-title">আমাদের শিক্ষাক্রম</span>
+                <h2>আমাদের কোর্সসমূহ</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="courses-grid">
+                
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-icon">📖</div>
+                    <h3>নূরানী কায়দা</h3>
+                    <p>শিশুদের জন্য প্রাথমিক কুরআন শিক্ষা, আরবি বর্ণমালা ও সঠিক উচ্চারণের ভিত্তি।</p>
+                    <a href="pages/courses.html#qaida" class="course-link">বিস্তারিত দেখুন <span>→</span></a>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-icon">🕌</div>
+                    <h3>তাজবিদ শিক্ষা</h3>
+                    <p>কুরআন মাজীদকে সঠিক মাখরাজ ও সিফাত সহকারে তিলাওয়াত করার নিয়মাবলি।</p>
+                    <a href="pages/courses.html#tajweed" class="course-link">বিস্তারিত দেখুন <span>→</span></a>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-icon">📿</div>
+                    <h3>হিফজুল কোরআন</h3>
+                    <p>মেধাবী শিক্ষার্থীদের জন্য তারতিলের সাথে সম্পূর্ণ বা আংশিক কোরআন মুখস্থ করা।</p>
+                    <a href="pages/courses.html#hifz" class="course-link">বিস্তারিত দেখুন <span>→</span></a>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="course-card">
+                    <div class="course-icon">🕋</div>
+                    <h3>কুরআন শিক্ষা</h3>
+                    <p>বয়স্ক ও নতুনদের জন্য সহজ পদ্ধতিতে সম্পূর্ণ কুরআন সাবলীলভাবে পড়ার প্রশিক্ষণ।</p>
+                    <a href="pages/courses.html#quran" class="course-link">বিস্তারিত দেখুন <span>→</span></a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         PHASE 5: WHY CHOOSE US SECTION
+         ========================================================================== -->
+    <section class="why-us-section">
+        <div class="why-us-container">
+            
+            <div class="section-title">
+                <span class="sub-title">আমাদের বৈশিষ্ট্যসমূহ</span>
+                <h2>কেন আমাদের বেছে নেবেন?</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="why-us-grid">
+                
+                <!-- Feature Card 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>অভিজ্ঞ শিক্ষক</h3>
+                    <p>দক্ষ, অভিজ্ঞ ও আন্তর্জাতিক মানসম্পন্ন সনদপ্রাপ্ত হাফেজ ও আলেমদের প্রত্যক্ষ পর্যবেক্ষণ।</p>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>১-টু-১ লাইভ ক্লাস</h3>
+                    <p>প্রতিটি শিক্ষার্থীর জন্য ব্যক্তিকৈন্দিক মনোযোগ ও আলাদা শিক্ষক নির্ধারণ।</p>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3>ফ্লেক্সিবল সময়সূচী</h3>
+                    <p>আপনার সুবিধাজনক সময় ও দিন অনুযায়ী ক্লাসের সময় বেছে নেওয়ার পূর্ণ স্বাধীনতা।</p>
+                </div>
+
+                <!-- Feature Card 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🧕</div>
+                    <h3>মহিলা শিক্ষিকা</h3>
+                    <p>বোনদের এবং ছোট্ট শিশুদের জন্য অভিজ্ঞ ও পর্দানশীন মহিলা শিক্ষিকার সুব্যবস্থা।</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         PHASE 6: TESTIMONIALS SECTION
+         ========================================================================== -->
+    <section class="testimonials-section">
+        <div class="courses-container">
+            <div class="section-title">
+                <span class="sub-title">অভিভাবকদের মতামত</span>
+                <h2>শিক্ষার্থী ও অভিভাবকদের অনুভূতি</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Card 1 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"আমার ৭ বছরের ছেলে ঘরে বসেই তাজবীদসহ সুন্দর করে কুরআন পড়া শিখছে। শিক্ষকদের ধৈর্য ও পড়ানোর পদ্ধতি সত্যিই প্রশংসনীয়।"</p>
+                    <div class="student-info">
+                        <div class="student-avatar">আ</div>
+                        <div class="student-details">
+                            <h4>আব্দুল্লাহর বাবা</h4>
+                            <span>ঢাকা, বাংলাদেশ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"মহিলা শিক্ষিকার মাধ্যমে ক্লাস হওয়ার কারণে আমার মেয়ে খুব স্বচ্ছন্দে ও নিরাপদে কুরআন শিখতে পারছে। আলহামদুলিল্লাহ।"</p>
+                    <div class="student-info">
+                        <div class="student-avatar">ফ</div>
+                        <div class="student-details">
+                            <h4>ফাতিমার আম্মু</h4>
+                            <span>চট্টগ্রাম, বাংলাদেশ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"চাকরির পাশাপাশি সময় মিলিয়ে পড়া অসম্ভব ছিল। তাদের ফ্লেক্সিবল টাইমিংয়ের জন্য রাতে ক্লাস করে কুরআন রিভিশন দিচ্ছি।"</p>
+                    <div class="student-info">
+                        <div class="student-avatar">র</div>
+                        <div class="student-details">
+                            <h4>রফিকুল ইসলাম</h4>
+                            <span>প্রবাসী শিক্ষার্থী, ইউকে</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         PHASE 6: CALL TO ACTION (CTA) BANNER
+         ========================================================================== -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>আজই আপনার কুরআনি সফর শুরু করুন</h2>
+            <p>আমাদের যেকোনো কোর্সে ফ্রি ট্রায়াল ক্লাসের জন্য এখনই রেজিস্ট্রেশন করুন।</p>
+            <a href="pages/admission.html" class="btn btn-primary">ফ্রি ট্রায়াল বুক করুন</a>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         PHASE 7: FOOTER SECTION
+         ========================================================================== -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            
+            <!-- Col 1: About -->
+            <div class="footer-col footer-about">
+                <h3>Madrasatul Quran Online</h3>
+                <p>আমরা আধুনিক প্রযুক্তি ও ঐতিহ্যবাহী দ্বীনি শিক্ষার সমন্বয়ে ঘরে বসেই বিশুদ্ধ কুরআন শিক্ষার একটি নির্ভরযোগ্য অনলাইন প্রতিষ্ঠান।</p>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div class="footer-col">
+                <h4>কুইক লিংক</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">হোম</a></li>
                     <li><a href="pages/about.html">আমাদের সম্পর্কে</a></li>
                     <li><a href="pages/courses.html">কোর্সসমূহ</a></li>
-                    <li><a href="pages/admission.html">ভর্তি প্রক্রিয়া</a></li>
+                    <li><a href="pages/admission.html">অনলাইন ভর্তি</a></li>
                     <li><a href="pages/contact.html">যোগাযোগ</a></li>
                 </ul>
             </div>
-            
-            <div class="footer-col contact-col">
-                <h3>যোগাযোগ</h3>
-                <p>📞 +880 1707532306</p>
-                <p>✉️ islamicupay@gmail.com</p>
-                <p>🌐 24/7 অনলাইন ক্লাস</p>
+
+            <!-- Col 3: Courses -->
+            <div class="footer-col">
+                <h4>আমাদের কোর্স</h4>
+                <ul class="footer-links">
+                    <li><a href="pages/courses.html#qaida">নূরানী কায়দা</a></li>
+                    <li><a href="pages/courses.html#tajweed">তাজবিদ শিক্ষা</a></li>
+                    <li><a href="pages/courses.html#hifz">হিফজুল কোরআন</a></li>
+                    <li><a href="pages/courses.html#quran">কুরআন শিক্ষা</a></li>
+                </ul>
             </div>
+
+            <!-- Col 4: Contact Info -->
+            <div class="footer-col">
+                <h4>যোগাযোগ</h4>
+                <ul class="contact-info">
+                    <li>📍 ঢাকা, বাংলাদেশ</li>
+                    <li>📞 +880 1707532306</li>
+                    <li>✉️ info.madrasaqo@gmail.com</li>
+                </ul>
+            </div>
+
         </div>
-        
+
+        <!-- Bottom Copyright -->
         <div class="footer-bottom">
-            <p>© Madrasatul Quran Online - MadrasaQO 2026 | All Rights Reserved.</p>
+            <p>Copyright &copy; 2026 Madrasaqo.com</p>
         </div>
     </footer>
-    <a class="floating-whatsapp" href="https://wa.me/8801707532306" target="_blank">☏</a>
-    <!-- JavaScript Link -->
-    <script src="js/script.js"></script>
 
+    <!-- JavaScript for Navigation & Counter Animation -->
+    <script>
+        // Hamburger Menu Toggle
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburgerBtn.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Animated Counters
+        const counters = document.querySelectorAll('.stat-number');
+        let animated = false;
+
+        function startCounters() {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                let count = 0;
+                const speed = target / 50;
+
+                const updateCount = () => {
+                    count += speed;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count) + (target === 99 ? '%' : '+');
+                        setTimeout(updateCount, 30);
+                    } else {
+                        counter.innerText = target + (target === 99 ? '%' : '+');
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            const statsSection = document.querySelector('.stats-section');
+            if (statsSection) {
+                const sectionPos = statsSection.getBoundingClientRect().top;
+                const screenPos = window.innerHeight / 1.2;
+
+                if (sectionPos < screenPos && !animated) {
+                    startCounters();
+                    animated = true;
+                }
+            }
+        });
+    </script>
+    <!-- Floating WhatsApp Icon -->
+<a href="https://wa.me/8801707532306" class="whatsapp-float" target="_blank" aria-label="WhatsApp-এ যোগাযোগ করুন">
+    <svg viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+</a>
 </body>
 </html>

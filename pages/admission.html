@@ -3,137 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ভর্তি প্রক্রিয়া - Madrasatul Quran Online</title>
+    <title>অনলাইন ভর্তি | Madrasatul Quran Online</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-    <!-- ===== PREMIUM HEADER ===== -->
+    <!-- Header Section -->
     <header class="main-header">
-        <div class="logo-section">
-            <a href="../index.html" style="text-decoration: none;">
-                <img src="../images/logo.png" alt="Madrasatul Quran Online Logo">
+        <div class="header-container">
+            <a href="../index.html" class="brand-link">
+                <div class="logo-bg">
+                    <img src="../images/logo.png" alt="MadrasaQO Logo" class="site-logo">
+                </div>
+                <div class="brand-text">
+                    <span class="site-name">Madrasatul Quran Online</span>
+                    <span class="site-tagline">আমরা গাই কুরআনের আলোয়</span>
+                </div>
             </a>
-            <div class="logo-text">
-                <h1>Madrasatul Quran Online</h1>
-                <p>আমরা গাই কুরআনের আলোয়</p>
-            </div>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">হোম</a></li>
+                    <li><a href="about.html" class="nav-link">আমাদের সম্পর্কে</a></li>
+                    <li><a href="courses.html" class="nav-link">কোর্স</a></li>
+                    <li><a href="books.html" class="nav-link">আমাদের বই</a></li>
+                    <li><a href="contact.html" class="nav-link">যোগাযোগ</a></li>
+                </ul>
+                <a href="admission.html" class="btn-admission-header">ভর্তি করুন</a>
+            </nav>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
-        <nav class="desktop-nav">
-            <ul>
-                <li><a href="../index.html">হোম</a></li>
-                <li><a href="about.html">আমাদের সম্পর্কে</a></li>
-                <li><a href="courses.html">কোর্স</a></li>
-                <li><a href="admission.html" class="active" style="color: #D4AF37;">ভর্তি</a></li>
-                <li><a href="contact.html">যোগাযোগ</a></li>
-            </ul>
-        </nav>
-        <a href="admission.html" class="header-btn">ভর্তি করুন</a>
     </header>
 
-    <!-- ===== PAGE BANNER ===== -->
+    <!-- Page Sub-Banner -->
     <section class="page-banner">
-        <div class="banner-content">
-            <h1>ভর্তি ফর্ম</h1>
-            <p>কুরআন শিক্ষার এই মহান যাত্রায় আপনাকে স্বাগতম</p>
+        <div class="page-banner-container">
+            <h1>অনলাইন ভর্তি ফর্ম</h1>
+            <div class="breadcrumb">
+                <a href="../index.html">হোম</a> / <span>ভর্তি</span>
+            </div>
         </div>
     </section>
 
-    <!-- ===== ADMISSION FORM SECTION ===== -->
+    <!-- Admission Form Section -->
     <section class="admission-section">
-        <div class="form-container">
-            <h2 style="text-align: center; color: #0B5D4B; margin-bottom: 20px;">আপনার তথ্য দিন</h2>
-            <p style="text-align: center; margin-bottom: 30px; color: #555;">নিচের ফর্মটি পূরণ করুন, আমাদের প্রতিনিধি খুব দ্রুত আপনার সাথে যোগাযোগ করবেন।</p>
-            
-            <form id="admissionForm" onsubmit="sendToWhatsApp(event)">
-                <div class="form-group">
-                    <label for="name">শিক্ষার্থীর নাম *</label>
-                    <input type="text" id="studentName" placeholder="আপনার পুরো নাম লিখুন" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">মোবাইল নাম্বার *</label>
-                    <input type="tel" id="studentPhone" placeholder="017XXXXXXXX" required>
+        <div class="admission-container">
+            <div class="admission-header">
+                <h2>ভর্তির জন্য আবেদন করুন</h2>
+                <p>ফ্রি ট্রায়াল ক্লাস বুক করতে নিচের ফর্মটি সঠিকভাবে পূরণ করুন।</p>
+            </div>
+
+            <form id="admissionForm">
+                <div class="form-grid">
+                    
+                    <!-- Student Name -->
+                    <div class="form-group">
+                        <label for="studentName">শিক্ষার্থীর নাম <span>*</span></label>
+                        <input type="text" id="studentName" class="form-control" placeholder="পূর্ণ নাম লিখুন" required>
+                    </div>
+
+                    <!-- Guardian Name -->
+                    <div class="form-group">
+                        <label for="guardianName">অভিভাবকের নাম</label>
+                        <input type="text" id="guardianName" class="form-control" placeholder="অভিভাবকের নাম (প্রযোজ্য হলে)">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="form-group">
+                        <label for="phone">মোবাইল / হোয়াটসঅ্যাপ নম্বর <span>*</span></label>
+                        <input type="tel" id="phone" class="form-control" placeholder="017XXXXXXXX" required>
+                    </div>
+
+                    <!-- Age -->
+                    <div class="form-group">
+                        <label for="age">বয়স <span>*</span></label>
+                        <input type="number" id="age" class="form-control" placeholder="বয়স (বছরে)" required>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="form-group">
+                        <label for="gender">লিঙ্গ <span>*</span></label>
+                        <select id="gender" class="form-control" required>
+                            <option value="">নির্বাচন করুন</option>
+                            <option value="male">পুরুষ</option>
+                            <option value="female">মহিলা</option>
+                        </select>
+                    </div>
+
+                    <!-- Course Select -->
+                    <div class="form-group">
+                        <label for="course">কোর্স নির্বাচন করুন <span>*</span></label>
+                        <select id="course" class="form-control" required>
+                            <option value="">কোর্স বেছে নিন</option>
+                            <option value="qaida">নূরানী কায়দা শিক্ষা</option>
+                            <option value="tajweed">তাজবীদসহ কুরআন শিক্ষা</option>
+                            <option value="hifz">হিফজুল কুরআন</option>
+                        </select>
+                    </div>
+
+                    <!-- Preferred Time -->
+                    <div class="form-group full-width">
+                        <label for="timeSlot">পছন্দের সময় / শিফট <span>*</span></label>
+                        <select id="timeSlot" class="form-control" required>
+                            <option value="">পড়ানোর সময় বেছে নিন</option>
+                            <option value="morning">সকাল (৮:০০ - ১২:০০)</option>
+                            <option value="afternoon">বিকাল (৩:০০ - ৫:০০)</option>
+                            <option value="night">রাত (৮:০০ - ১১:০০)</option>
+                        </select>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="form-group full-width">
+                        <label for="address">বর্তমান ঠিকানা (জেলা/দেশ)</label>
+                        <textarea id="address" class="form-control" rows="3" placeholder="আপনার বর্তমান ঠিকানা বা অবস্থান লিখুন"></textarea>
+                    </div>
+
                 </div>
 
-                <div class="form-group">
-                    <label for="age">শিক্ষার্থীর বয়স *</label>
-                    <input type="number" id="studentAge" placeholder="বয়স লিখুন" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="course">কোন কোর্সে ভর্তি হতে চান? *</label>
-                    <select id="studentCourse" required>
-                        <option value="">-- কোর্স নির্বাচন করুন --</option>
-                        <option value="নূরানী কায়দা">নূরানী কায়দা</option>
-                        <option value="তাজবীদ ও মাখরাজ">তাজবীদ ও মাখরাজ</option>
-                        <option value="হিফজুল কুরআন">হিফজুল কুরআন</option>
-                    </select>
-                </div>
-                
-                <button type="submit" class="submit-btn">ভর্তির আবেদন জমা দিন</button>
+                <button type="submit" class="btn btn-primary btn-submit">আবেদন জমা দিন</button>
             </form>
         </div>
     </section>
 
-    <!-- ===== PREMIUM FOOTER ===== -->
-    <footer class="premium-footer">
+    <!-- Footer Section -->
+    <footer class="main-footer">
         <div class="footer-container">
-            <div class="footer-col about-col">
+            <div class="footer-col footer-about">
                 <h3>Madrasatul Quran Online</h3>
-                <p>আমরা গাই কুরআনের আলোয়। ঘরে বসেই অভিজ্ঞ শিক্ষকদের তত্ত্বাবধানে নূরানী, তাজবীদ, হিফজ ও কুরআন শিক্ষা গ্রহণ করুন।</p>
+                <p>আমরা আধুনিক প্রযুক্তি ও ঐতিহ্যবাহী দ্বীনি শিক্ষার সমন্বয়ে ঘরে বসেই বিশুদ্ধ কুরআন শিক্ষার একটি নির্ভরযোগ্য অনলাইন প্রতিষ্ঠান।</p>
             </div>
-            
-            <div class="footer-col links-col">
-                <h3>প্রয়োজনীয় লিংক</h3>
-                <ul>
+            <div class="footer-col">
+                <h4>কুইক লিংক</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html">হোম</a></li>
                     <li><a href="about.html">আমাদের সম্পর্কে</a></li>
                     <li><a href="courses.html">কোর্সসমূহ</a></li>
-                    <li><a href="admission.html">ভর্তি প্রক্রিয়া</a></li>
+                    <li><a href="admission.html">অনলাইন ভর্তি</a></li>
                     <li><a href="contact.html">যোগাযোগ</a></li>
                 </ul>
             </div>
-            
-            <div class="footer-col contact-col">
-                <h3>যোগাযোগ</h3>
-                <p>📞 +880 1707532306</p>
-                <p>✉️ islamicupay@gmail.com</p>
-                <p>🌐 24/7 অনলাইন ক্লাস</p>
+            <div class="footer-col">
+                <h4>আমাদের কোর্স</h4>
+                <ul class="footer-links">
+                    <li><a href="courses.html#qaida">নূরানী কায়দা</a></li>
+                    <li><a href="courses.html#tajweed">তাজবিদ শিক্ষা</a></li>
+                    <li><a href="courses.html#hifz">হিফজুল কোরআন</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>যোগাযোগ</h4>
+                <ul class="contact-info">
+                    <li>📍 ঢাকা, বাংলাদেশ</li>
+                    <li>📞 +880 1707532306</li>
+                    <li>✉️ info.madrasaqo@gmail.com</li>
+                </ul>
             </div>
         </div>
-        
         <div class="footer-bottom">
-            <p>© Madrasatul Quran Online 2026 | All Rights Reserved.</p>
+            <p>Copyright &copy; 2026 Madrasaqo.com</p>
         </div>
     </footer>
-    <!-- WhatsApp Integration Script -->
+
+    <!-- Script for Mobile Menu -->
     <script>
-        function sendToWhatsApp(event) {
-            event.preventDefault(); // পেজ রিলোড হওয়া বন্ধ করবে
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navMenu = document.getElementById('navMenu');
 
-            // ফর্ম থেকে তথ্যগুলো সংগ্রহ করা
-            let name = document.getElementById("studentName").value;
-            let phone = document.getElementById("studentPhone").value;
-            let age = document.getElementById("studentAge").value;
-            let course = document.getElementById("studentCourse").value;
-
-            // আপনার হোয়াটসঅ্যাপ নাম্বার (কান্ট্রি কোড সহ, কোনো + বা স্পেস ছাড়া)
-            let whatsappNumber = "8801707532306"; 
-
-            // হোয়াটসঅ্যাপে যে মেসেজটি যাবে সেটি সাজানো
-            let message = "আসসালামু আলাইকুম, আমি 'Madrasatul Quran Online'-এ ভর্তি হতে চাই।\n\n";
-            message += "👤 শিক্ষার্থীর নাম: " + name + "\n";
-            message += "📞 মোবাইল নাম্বার: " + phone + "\n";
-            message += "⏳ বয়স: " + age + " বছর\n";
-            message += "📖 কোর্সের নাম: " + course;
-
-            // হোয়াটসঅ্যাপের লিংক তৈরি করা
-            let whatsappLink = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
-
-            // নতুন ট্যাবে হোয়াটসঅ্যাপ ওপেন করা
-            window.open(whatsappLink, "_blank");
-        }
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
     </script>
+    <!-- WhatsApp Admission Form Script -->
+    <script>
+        document.getElementById('admissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('studentName').value;
+            const guardian = document.getElementById('guardianName').value || 'প্রযোজ্য নয়';
+            const phone = document.getElementById('phone').value;
+            const age = document.getElementById('age').value;
+            
+            const genderSelect = document.getElementById('gender');
+            const gender = genderSelect.options[genderSelect.selectedIndex].text;
+            
+            const courseSelect = document.getElementById('course');
+            const course = courseSelect.options[courseSelect.selectedIndex].text;
+            
+            const timeSelect = document.getElementById('timeSlot');
+            const timeSlot = timeSelect.options[timeSelect.selectedIndex].text;
+            
+            const address = document.getElementById('address').value || 'দেওয়া হয়নি';
 
+            // WhatsApp Message Format
+            const text = `*নতুন ভর্তি আবেদন - Madrasatul Quran Online*%0A%0A` +
+                         `👤 *শিক্ষার্থীর নাম:* ${encodeURIComponent(name)}%0A` +
+                         `👨‍👩‍👦 *অভিভাবকের নাম:* ${encodeURIComponent(guardian)}%0A` +
+                         `📞 *ফোন/হোয়াটসঅ্যাপ:* ${encodeURIComponent(phone)}%0A` +
+                         `🎂 *বয়স:* ${encodeURIComponent(age)} বছর%0A` +
+                         `🚻 *লিঙ্গ:* ${encodeURIComponent(gender)}%0A` +
+                         `📚 *কোর্স:* ${encodeURIComponent(course)}%0A` +
+                         `⏰ *পছন্দের সময়:* ${encodeURIComponent(timeSlot)}%0A` +
+                         `📍 *ঠিকানা:* ${encodeURIComponent(address)}`;
+
+            const whatsappNumber = '8801707532306';
+            window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+        });
+    </script>
+    <!-- Floating WhatsApp Icon -->
+<a href="https://wa.me/8801707532306" class="whatsapp-float" target="_blank" aria-label="WhatsApp-এ যোগাযোগ করুন">
+    <svg viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+</a>
 </body>
 </html>
