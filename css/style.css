@@ -1531,7 +1531,7 @@ img {
    NAVIGATION MENU COMPLETE FIX (ALL STATES)
    ========================================================================== */
 
-/* ১. সাধারণ/অন-সিলেক্টেড অবস্থাতায় (ভিজিট করা বা না-করা যাই হোক) */
+/* ১. সাধারণ/অন-সিলেক্টেড অবস্থাতায় */
 .nav-links li a,
 .nav-links li a:link,
 .nav-links li a:visited {
@@ -1558,6 +1558,7 @@ img {
     border-bottom: 2px solid #d4a373 !important;
     opacity: 1;
 }
+
 /* PDF Modal Fullscreen & Button Styles */
 .pdf-modal-btn {
   background: transparent;
@@ -1580,7 +1581,7 @@ img {
   height: 100vh !important;
   max-width: 100% !important;
   border-radius: 0 !important;
-
+} /* 🟢 ঠিক করা হয়েছে */
 
 /* When Active (Opened) */
 .wa-chat-box.active {
@@ -1721,4 +1722,48 @@ img {
     width: 290px;
     right: -10px;
   }
+}
+
+/* ==========================================
+   একাডেমীর প্রধানের প্রোফাইল স্টাইল (Footer)
+   ========================================== */
+.principal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.principal-img {
+    width: 85px !important;
+    height: 85px !important;
+    border-radius: 50% !important; /* ছবি গোল করার জন্য */
+    object-fit: cover !important;
+    border: 3px solid #25D366 !important; /* চমৎকার গ্রিন বর্ডার */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.principal-info h4 {
+    color: #ffffff !important;
+    font-size: 1.1rem !important;
+    margin: 0 0 4px 0 !important;
+    font-weight: 600 !important;
+}
+
+.principal-title {
+    color: #25D366 !important;
+    font-size: 0.9rem !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+}
+
+.principal-sub {
+    color: #cccccc !important;
+    font-size: 0.8rem !important;
+    margin: 2px 0 6px 0 !important;
+}
+
+.principal-social {
+    margin: 0 !important;
+    font-size: 0.85rem !important;
 }
