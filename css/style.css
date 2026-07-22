@@ -1580,4 +1580,145 @@ img {
   height: 100vh !important;
   max-width: 100% !important;
   border-radius: 0 !important;
+
+
+/* When Active (Opened) */
+.wa-chat-box.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+/* Header */
+.wa-chat-header {
+  background-color: #075E54;
+  color: #ffffff;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wa-header-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wa-avatar {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wa-header-info h4 {
+  font-size: 0.95rem;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.wa-header-info p {
+  font-size: 0.78rem;
+  margin: 2px 0 0 0;
+  opacity: 0.85;
+}
+
+.wa-close-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.wa-close-btn:hover {
+  opacity: 1;
+}
+
+/* Body */
+.wa-chat-body {
+  background-color: #e5ddd5;
+  background-image: radial-gradient(#000000 0.5px, transparent 0.5px);
+  background-size: 10px 10px;
+  background-opacity: 0.05;
+  padding: 16px;
+  min-height: 140px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.wa-msg-bubble {
+  background: #ffffff;
+  padding: 10px 12px;
+  border-radius: 0 12px 12px 12px;
+  font-size: 0.88rem;
+  color: #333333;
+  line-height: 1.4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 90%;
+}
+
+.wa-time {
+  display: block;
+  font-size: 0.68rem;
+  color: #999999;
+  text-align: right;
+  margin-top: 4px;
+}
+
+/* Footer & Input */
+.wa-chat-footer {
+  padding: 10px;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wa-chat-footer input {
+  flex: 1;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 0.88rem;
+  outline: none;
+  background: #ffffff;
+}
+
+.wa-chat-footer input:focus {
+  border-color: #128C7E;
+}
+
+.wa-send-btn {
+  width: 36px;
+  height: 36px;
+  background-color: #09d261;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.wa-send-btn:hover {
+  background-color: #07b051;
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 480px) {
+  .wa-chat-box {
+    width: 290px;
+    right: -10px;
+  }
 }

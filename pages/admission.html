@@ -27,7 +27,7 @@
                 </div>
                 <div class="brand-text">
                     <span class="site-name">Madrasatul Quran Online</span>
-                    <span class="site-tagline">আমরা গাই কুরআনের আলোয়</span>
+                    <span class="site-tagline">মাদরাসাতুল কোরআন অনলাইন</span>
                 </div>
             </a>
 
@@ -36,7 +36,7 @@
                     <li><a href="../index.html" class="nav-link">হোম</a></li>
                     <li><a href="about.html" class="nav-link">আমাদের সম্পর্কে</a></li>
                     <li><a href="courses.html" class="nav-link">কোর্স</a></li>
-                    <li><a href="books.html" class="nav-link">আমাদের বই</a></li>
+                    <li><a href="books.html" class="nav-link">বইসমূহ</a></li>
                     <li><a href="contact.html" class="nav-link">যোগাযোগ</a></li>
                 </ul>
                 <a href="admission.html" class="btn-admission-header">ভর্তি করুন</a>
@@ -86,7 +86,7 @@
                     <!-- Phone Number -->
                     <div class="form-group">
                         <label for="phone">মোবাইল / হোয়াটসঅ্যাপ নম্বর <span>*</span></label>
-                        <input type="tel" id="phone" class="form-control" placeholder="017XXXXXXXX" required>
+                        <input type="tel" id="phone" class="form-control" placeholder="01XXXXXXXXX" required>
                     </div>
 
                     <!-- Age -->
@@ -110,9 +110,10 @@
                         <label for="course">কোর্স নির্বাচন করুন <span>*</span></label>
                         <select id="course" class="form-control" required>
                             <option value="">কোর্স বেছে নিন</option>
-                            <option value="qaida">নূরানী কায়দা শিক্ষা</option>
-                            <option value="tajweed">তাজবীদসহ কুরআন শিক্ষা</option>
+                            <option value="Nurani">নূরানী</option>
+                            <option value="Najera">নাজেরা</option>
                             <option value="hifz">হিফজুল কুরআন</option>
+                            <option value="Kitab">কিতাব বিভাগ</option>
                         </select>
                     </div>
 
@@ -121,16 +122,16 @@
                         <label for="timeSlot">পছন্দের সময় / শিফট <span>*</span></label>
                         <select id="timeSlot" class="form-control" required>
                             <option value="">পড়ানোর সময় বেছে নিন</option>
-                            <option value="morning">সকাল (৮:০০ - ১২:০০)</option>
-                            <option value="afternoon">বিকাল (৩:০০ - ৫:০০)</option>
-                            <option value="night">রাত (৮:০০ - ১১:০০)</option>
+                            <option value="morning">সকাল</option>
+                            <option value="afternoon">বিকাল</option>
+                            <option value="night">রাত</option>
                         </select>
                     </div>
 
                     <!-- Address -->
                     <div class="form-group full-width">
-                        <label for="address">বর্তমান ঠিকানা (জেলা/দেশ)</label>
-                        <textarea id="address" class="form-control" rows="3" placeholder="আপনার বর্তমান ঠিকানা বা অবস্থান লিখুন"></textarea>
+                        <label for="address">বর্তমান ঠিকানা (দেশ)</label>
+                        <input type="tel" id="address" class="form-control" placeholder="বাংলাদেশ" required>
                     </div>
 
                 </div>
@@ -145,14 +146,13 @@
         <div class="footer-container">
             <div class="footer-col footer-about">
                 <h3>Madrasatul Quran Online</h3>
-                <p>আমরা আধুনিক প্রযুক্তি ও ঐতিহ্যবাহী দ্বীনি শিক্ষার সমন্বয়ে ঘরে বসেই বিশুদ্ধ কুরআন শিক্ষার একটি নির্ভরযোগ্য অনলাইন প্রতিষ্ঠান।</p>
+                <p>আধুনিক প্রযুক্তি ও ঐতিহ্যবাহী দ্বীনি শিক্ষার সমন্বয়ে ঘরে বসেই বিশুদ্ধ কোরআন ও ইলমে দ্বীন শিক্ষার একটি নির্ভরযোগ্য অনলাইন প্রতিষ্ঠান।</p>
             </div>
             <div class="footer-col">
                 <h4>কুইক লিংক</h4>
                 <ul class="footer-links">
                     <li><a href="../index.html">হোম</a></li>
                     <li><a href="about.html">আমাদের সম্পর্কে</a></li>
-                    <li><a href="courses.html">কোর্সসমূহ</a></li>
                     <li><a href="admission.html">অনলাইন ভর্তি</a></li>
                     <li><a href="contact.html">যোগাযোগ</a></li>
                 </ul>
@@ -160,9 +160,10 @@
             <div class="footer-col">
                 <h4>আমাদের কোর্স</h4>
                 <ul class="footer-links">
-                    <li><a href="courses.html#qaida">নূরানী কায়দা</a></li>
-                    <li><a href="courses.html#tajweed">তাজবিদ শিক্ষা</a></li>
+                    <li><a href="courses.html#Nurani">নূরানী</a></li>
+                    <li><a href="courses.html#Najera">নাজেরা</a></li>
                     <li><a href="courses.html#hifz">হিফজুল কোরআন</a></li>
+                    <li><a href="courses.html#Kitab">কিতাব বিভাগ</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -189,42 +190,7 @@
             navMenu.classList.toggle('active');
         });
     </script>
-    <!-- WhatsApp Admission Form Script -->
-    <script>
-        document.getElementById('admissionForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('studentName').value;
-            const guardian = document.getElementById('guardianName').value || 'প্রযোজ্য নয়';
-            const phone = document.getElementById('phone').value;
-            const age = document.getElementById('age').value;
-            
-            const genderSelect = document.getElementById('gender');
-            const gender = genderSelect.options[genderSelect.selectedIndex].text;
-            
-            const courseSelect = document.getElementById('course');
-            const course = courseSelect.options[courseSelect.selectedIndex].text;
-            
-            const timeSelect = document.getElementById('timeSlot');
-            const timeSlot = timeSelect.options[timeSelect.selectedIndex].text;
-            
-            const address = document.getElementById('address').value || 'দেওয়া হয়নি';
-
-            // WhatsApp Message Format
-            const text = `*নতুন ভর্তি আবেদন - Madrasatul Quran Online*%0A%0A` +
-                         `👤 *শিক্ষার্থীর নাম:* ${encodeURIComponent(name)}%0A` +
-                         `👨‍👩‍👦 *অভিভাবকের নাম:* ${encodeURIComponent(guardian)}%0A` +
-                         `📞 *ফোন/হোয়াটসঅ্যাপ:* ${encodeURIComponent(phone)}%0A` +
-                         `🎂 *বয়স:* ${encodeURIComponent(age)} বছর%0A` +
-                         `🚻 *লিঙ্গ:* ${encodeURIComponent(gender)}%0A` +
-                         `📚 *কোর্স:* ${encodeURIComponent(course)}%0A` +
-                         `⏰ *পছন্দের সময়:* ${encodeURIComponent(timeSlot)}%0A` +
-                         `📍 *ঠিকানা:* ${encodeURIComponent(address)}`;
-
-            const whatsappNumber = '8801707532306';
-            window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
-        });
-    </script>
+    
     <!-- Floating WhatsApp Icon -->
 <a href="https://wa.me/8801707532306" class="whatsapp-float" target="_blank" aria-label="WhatsApp-এ যোগাযোগ করুন">
     <svg viewBox="0 0 24 24">
